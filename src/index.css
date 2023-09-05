@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: League Spartan, sans-serif;
+  }
+
+  body {
+    @apply bg-light-grayish-cyan;
+  }
+}
+
+@layer components {
+  .filter-button {
+    @apply rounded bg-light-grayish-cyan px-2 py-4 font-bold leading-[0px] text-dark-cyan transition hover:bg-dark-cyan hover:text-white;
+  }
+
+  .job-detail {
+    @apply font-medium text-dark-grayish-cyan;
+  }
+
+  .my-container {
+    @apply mx-auto max-w-[1100px] px-6;
+  }
+}
